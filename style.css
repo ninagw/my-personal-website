@@ -6,6 +6,9 @@
   font-family: 'Montserrat', sans-serif;
   src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.woff);
   src: url(./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff);
+
+  font-family: 'Cutive Mono', monospace;
+  src: url(./assets/fonts/Cutive_Mono/CutiveMono-Regular.woff);
 }
 
 body {
