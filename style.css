@@ -1,6 +1,11 @@
 @font-face {
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Raleway', sans-serif;
+  src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.woff);
+  src: url(./assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.woff);
+
+  font-family: 'Montserrat', sans-serif;
   src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.woff);
+  src: url(./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff);
 }
 
 body {
@@ -9,7 +14,6 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
   padding: 1rem;
 }
 
