@@ -21,9 +21,15 @@ body {
   background-color: whitesmoke;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   font-size: 16px;
-  padding: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-with: 600px) {
+/*...*/
 }
 
 * {
@@ -32,18 +38,21 @@ body {
 
 header {
   width: 100%;
+  margin: 1rem 2rem;
+
  /*  height: 100vh;
   background-image: url("./assets/images/nkm_Mitarbeiter_Nina_6862_CeditAmelie-Niederbuchner_1080x1080.jpg"); */
 } 
 
 nav {
   height: 48px;
+  width: 100%; 
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
   position: sticky;
-  top: 70px;
+  top: 0;
   background-color: gainsboro;
   border-radius: 15px;
   padding-right: 5%;
@@ -51,7 +60,28 @@ nav {
 
 main {
   flex-grow: 1;
-  padding: 1rem;
+  margin: 1rem 2rem;
+}
+
+#Contact {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  #Contact {
+    flex-direction: column;
+    height: auto;
+    gap: 0;
+    padding: 5% 0%;
+  }
 }
 
 footer {
@@ -66,17 +96,12 @@ align-items: center;
 justify-content: flex-start;
 }
 
-#Contact {
-  height: 250px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-  background-color: white;
-  border-radius: 15px;
-  padding-left: 5%;
+p, li, a {
+  line-height: 150%;
+}
+
+img {
+  border-radius: 50%;
 }
 
 a {
