@@ -121,6 +121,17 @@ a:hover {
   font-weight: bold;
 }
 
+.progress-bar {
+  background-color: black;
+  height: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  z-index: 10;
+  transition: width 0.05s ease;
+}
+
 /* h1 {
   font-family: 'Cutive Mono', monospace;
 }
