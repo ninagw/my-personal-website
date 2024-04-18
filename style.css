@@ -132,6 +132,11 @@ a:hover {
   transition: width 0.05s ease;
 }
 
+.tech-stack-list {
+  display: flex;
+  gap: 20px;
+}
+
 /* h1 {
   font-family: 'Cutive Mono', monospace;
 }
