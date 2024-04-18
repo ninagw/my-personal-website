@@ -1,22 +1,22 @@
 @font-face {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.woff);
   /* src: url(./assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.woff); */
 }
 
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.woff);
   /* src: url(./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff); */
 }
 
 @font-face {
-  font-family: 'Cutive Mono', monospace;
+  font-family: "Cutive Mono", monospace;
   src: url(./assets/fonts/Cutive_Mono/CutiveMono-Regular.woff);
-} 
+}
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100;
   background-color: whitesmoke;
   min-height: 100vh;
@@ -29,7 +29,7 @@ body {
 }
 
 @media screen and (min-with: 600px) {
-/*...*/
+  /*...*/
 }
 
 * {
@@ -40,13 +40,13 @@ header {
   width: 100%;
   margin: 1rem 2rem;
 
- /*  height: 100vh;
+  /*  height: 100vh;
   background-image: url("./assets/images/nkm_Mitarbeiter_Nina_6862_CeditAmelie-Niederbuchner_1080x1080.jpg"); */
-} 
+}
 
 nav {
   height: 48px;
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -85,18 +85,20 @@ main {
 }
 
 footer {
-background-color: gainsboro;
-width: 100%;
-height: 48px;
-padding-right: 5%;
-padding-left: 5%;
-gap: 20px;
-display: flex;
-align-items: center;
-justify-content: flex-start;
+  background-color: gainsboro;
+  width: 100%;
+  height: 48px;
+  padding-right: 5%;
+  padding-left: 5%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-p, li, a {
+p,
+li,
+a {
   line-height: 150%;
 }
 
@@ -107,6 +109,7 @@ img {
 a {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -139,4 +142,40 @@ a:hover {
 
 /* h1 {
   font-family: 'Cutive Mono', monospace;
+} */
+
+/* Poject slider: */
+.project-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-slider {
+  display: flex;
+}
+
+.project-slides img {
+  width: 100%;
+  display: none;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.prev-project {
+  left: 0;
+}
+
+.next-project {
+  right: 0;
 }
