@@ -143,3 +143,39 @@ a:hover {
 /* h1 {
   font-family: 'Cutive Mono', monospace;
 } */
+
+/* Poject slider: */
+.project-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-slider {
+  display: flex;
+}
+
+.project-slides img {
+  width: 100%;
+  display: none;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.prev-project {
+  left: 0;
+}
+
+.next-project {
+  right: 0;
+}
