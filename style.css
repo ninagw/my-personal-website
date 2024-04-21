@@ -36,10 +36,6 @@ body {
   /*...*/
 }
 
-* {
-  box-sizing: border-box;
-}
-
 header {
   width: 100%;
   margin: 1rem 2rem;
@@ -124,11 +120,16 @@ a:hover {
   transition: 0.5s;
 }
 
+button {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
 .button {
   border: gainsboro solid;
   border-radius: 5px;
   padding: 4px;
-  /* border: none; */
   padding: 8px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
@@ -179,14 +180,9 @@ a:hover {
   transition: transform 0.6s ease;
 
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
   background-color: white;
   border-radius: 15px;
-  padding: 5%;
+  padding: 3%;
 }
 
 .carousel-item.active {
@@ -198,26 +194,31 @@ a:hover {
   height: auto;
 }
 
+.arrow-previous,
+.arrow-next {
+  height: 20px;
+  width: auto;
+}
+
 .carousel-control-previous,
 .carousel-control-next {
   position: absolute;
   top: 50%;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5%;
-  height: 10%;
+  width: auto;
+  height: 40px;
   color: #000;
-  font-size: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: gainsboro;
   border-radius: 50%;
   text-decoration: none;
   cursor: pointer;
 }
 
-.carousel-control-prev {
+.carousel-control-previous {
   left: 0;
 }
 
@@ -225,10 +226,10 @@ a:hover {
   right: 0;
 }
 
-.carousel-control-prev-icon,
+.carousel-control-previous-icon,
 .carousel-control-next-icon {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
 }
 
 .carousel-indicators {
@@ -247,13 +248,13 @@ a:hover {
   width: 10px;
   height: 10px;
   margin: 0 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: gainsboro;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .carousel-indicators li.active {
-  background-color: #fff;
+  background-color: #000;
 }
 
 /* .project-container {

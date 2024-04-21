@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // let slideIndex = 0;
 // showSlide(slideIndex);
 
-// function prevSlide() {
+// function previousSlide() {
 //   showSlide((slideIndex -= 1));
 // }
 
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // }
 
 // function showSlide(index) {
-//   const slides = document.querySelectorAll(".project-slides img");
+//   const slides = document.querySelectorAll(".carousel-item img");
 
 //   if (index < 0) {
 //     slideIndex = slides.length - 1;
