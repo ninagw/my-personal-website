@@ -64,6 +64,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-content: baseline;
   align-items: center;
   gap: 20px;
   background-color: white;
@@ -129,7 +130,6 @@ button {
 .button {
   border: gainsboro solid;
   border-radius: 5px;
-  padding: 4px;
   padding: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -159,6 +159,8 @@ button {
 }
 
 .button-container {
+  display: flex;
+  align-items: center;
   padding: 5px 0 20px 0;
   gap: 10px;
 }
@@ -205,7 +207,7 @@ button {
 .carousel-control-next {
   position: absolute;
   top: 50%;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -260,38 +262,3 @@ button {
 .carousel-indicators li.active {
   background-color: #000;
 }
-
-/* .project-container {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-}
-
-.project-slider {
-  display: flex;
-} */
-/* 
-.project-slides img {
-  width: 100%;
-  display: none;
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  border-radius: 15px;
-}
-
-.prev-project {
-  left: 0;
-}
-
-.next-project {
-  right: 0;
-} */
