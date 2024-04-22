@@ -158,6 +158,11 @@ button {
   gap: 20px;
 }
 
+.button-container {
+  padding: 5px 0 10px 0;
+  gap: 10px;
+}
+
 /* h1 {
   font-family: 'Cutive Mono', monospace;
 } */
