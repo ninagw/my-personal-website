@@ -32,10 +32,6 @@ body {
   margin: 0;
 }
 
-@media screen and (min-with: 600px) {
-  /*...*/
-}
-
 header {
   width: 100%;
   margin: 1rem 2rem;
@@ -96,6 +92,10 @@ footer {
   justify-content: flex-start;
 }
 
+/* h1 {
+  font-family: 'Cutive Mono', monospace;
+} */
+
 p,
 li,
 a {
@@ -131,7 +131,7 @@ button {
   border-radius: 5px;
   padding: 4px;
   padding: 8px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .credit {
@@ -159,15 +159,11 @@ button {
 }
 
 .button-container {
-  padding: 5px 0 10px 0;
+  padding: 5px 0 20px 0;
   gap: 10px;
 }
 
-/* h1 {
-  font-family: 'Cutive Mono', monospace;
-} */
-
-/* Poject carousel: */
+/* Carousel: */
 .carousel {
   position: relative;
 }
@@ -209,15 +205,15 @@ button {
 .carousel-control-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  height: 40px;
+  /* width: auto; */
+  /* height: 40px; */
   color: #000;
-  background-color: gainsboro;
+  background-color: white;
   border-radius: 50%;
   text-decoration: none;
   cursor: pointer;
@@ -231,11 +227,11 @@ button {
   right: 0;
 }
 
-.carousel-control-previous-icon,
+/* .carousel-control-previous-icon,
 .carousel-control-next-icon {
   width: 10px;
   height: 10px;
-}
+} */
 
 .carousel-indicators {
   position: absolute;
@@ -244,17 +240,20 @@ button {
   transform: translateX(-50%);
   z-index: 2;
   list-style: none;
-  padding: 0;
+  padding: 5px;
   margin: 0;
 }
 
 .carousel-indicators li {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 5px;
+  /* width: 10px;
+  height: 10px; */
   margin: 0 5px;
   background-color: gainsboro;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-radius: 5px;
   cursor: pointer;
 }
 
