@@ -104,6 +104,11 @@ a {
 }
 
 img {
+  height: 200px;
+  width: auto;
+}
+
+.portrait-image {
   border-radius: 50%;
 }
 
