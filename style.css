@@ -25,7 +25,6 @@ body {
   background-color: whitesmoke;
   min-height: 100vh;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   font-size: 16px;
   padding: 0;
@@ -35,9 +34,16 @@ body {
 header {
   width: 100%;
   margin: 1rem 2rem;
+}
 
-  /*  height: 100vh;
-  background-image: url("./assets/images/nkm_Mitarbeiter_Nina_6862_CeditAmelie-Niederbuchner_1080x1080.jpg"); */
+h1 {
+  /* font-family: 'Cutive Mono', monospace; */
+  margin-bottom: 0;
+}
+
+.intro {
+  margin: 0;
+  padding: 10px 0 30px 0;
 }
 
 nav {
@@ -56,7 +62,7 @@ nav {
 
 main {
   flex-grow: 1;
-  margin: 1rem 2rem;
+  margin: 0 2rem 1rem 2rem;
 }
 
 #Contact {
@@ -92,10 +98,6 @@ footer {
   align-items: center;
   justify-content: flex-start;
 }
-
-/* h1 {
-  font-family: 'Cutive Mono', monospace;
-} */
 
 p,
 li,
