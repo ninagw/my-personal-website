@@ -15,33 +15,35 @@
   src: url(./assets/fonts/Cutive_Mono/CutiveMono-Regular.woff);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   background-color: whitesmoke;
   min-height: 100vh;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   font-size: 16px;
   padding: 0;
   margin: 0;
 }
 
-@media screen and (min-with: 600px) {
-  /*...*/
-}
-
-* {
-  box-sizing: border-box;
-}
-
 header {
   width: 100%;
   margin: 1rem 2rem;
+}
 
-  /*  height: 100vh;
-  background-image: url("./assets/images/nkm_Mitarbeiter_Nina_6862_CeditAmelie-Niederbuchner_1080x1080.jpg"); */
+h1 {
+  /* font-family: 'Cutive Mono', monospace; */
+  margin-bottom: 0;
+}
+
+.intro {
+  margin: 0;
+  padding: 10px 0 30px 0;
 }
 
 nav {
@@ -60,7 +62,7 @@ nav {
 
 main {
   flex-grow: 1;
-  margin: 1rem 2rem;
+  margin: 0 2rem 1rem 2rem;
 }
 
 #Contact {
@@ -68,6 +70,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-content: baseline;
   align-items: center;
   gap: 20px;
   background-color: white;
@@ -103,6 +106,11 @@ a {
 }
 
 img {
+  height: 200px;
+  width: auto;
+}
+
+.portrait-image {
   border-radius: 50%;
 }
 
@@ -110,10 +118,27 @@ a {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s;
 }
 
 a:hover {
   text-decoration: underline;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  border: gainsboro solid;
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .credit {
@@ -140,6 +165,108 @@ a:hover {
   gap: 20px;
 }
 
-/* h1 {
-  font-family: 'Cutive Mono', monospace;
-} */
+.button-container {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 20px 0;
+  gap: 10px;
+}
+
+/* Carousel: */
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  padding: 0 30px;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: none;
+  transition: transform 0.6s ease;
+
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow-previous,
+.arrow-next {
+  height: 20px;
+  width: auto;
+}
+
+.carousel-control-previous,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: auto; */
+  /* height: 40px; */
+  color: #000;
+  background-color: rgb(255, 255, 255, 0);
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-control-previous {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-previous-icon,
+.carousel-control-next-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 20px;
+  height: 5px;
+  /* width: 10px;
+  height: 10px; */
+  margin: 0 5px;
+  background-color: gainsboro;
+  /* border-radius: 50%; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-indicators li.active {
+  background-color: #000;
+}
