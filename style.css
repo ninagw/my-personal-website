@@ -222,7 +222,8 @@ button {
   /* width: auto; */
   /* height: 40px; */
   color: #000;
-  background-color: white;
+  background-color: #ffffff;
+  /* opacity: 0; */
   border-radius: 50%;
   text-decoration: none;
   cursor: pointer;
