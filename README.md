@@ -1,4 +1,3 @@
-First Scribble:
 ![Desktop Wireframe](assets/wireframe-desktop.png)
 
 ---
