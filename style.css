@@ -1,13 +1,11 @@
 @font-face {
   font-family: "Raleway", sans-serif;
   src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.woff);
-  /* src: url(./assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.woff); */
 }
 
 @font-face {
   font-family: "Montserrat", sans-serif;
   src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.woff);
-  /* src: url(./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff); */
 }
 
 @font-face {
