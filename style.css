@@ -108,6 +108,13 @@ img {
   width: auto;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: max-content;
+}
+
 .portrait-image {
   border-radius: 50%;
 }
