@@ -103,8 +103,7 @@ a {
   line-height: 150%;
 }
 
-img,
-video {
+img {
   height: 200px;
   width: auto;
 }
