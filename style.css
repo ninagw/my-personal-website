@@ -115,6 +115,13 @@ img {
   width: max-content;
 }
 
+@media screen and (max-width: 600px) {
+  .video-container {
+    height: 100%;
+    width: auto;
+  }
+}
+
 .portrait-image {
   border-radius: 50%;
 }
