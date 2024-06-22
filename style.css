@@ -109,8 +109,8 @@ img {
 }
 
 .video-container {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   gap: 20px;
   width: auto;
   height: max-content;
@@ -122,20 +122,6 @@ img {
     width: 100%;
   }
 }
-/* 
-@media screen and (max-width: 870px) {
-  video {
-    height: 100px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  video {
-    height: 350px;
-    width: 100%;
-  }
-} */
 
 .portrait-image {
   border-radius: 50%;
